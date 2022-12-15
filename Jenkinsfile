@@ -1,8 +1,8 @@
 pipeline {
-  agent { label 'linux'}
-  options {
-    skipDefaultCheckout(true)
-  }
+   agent any
+	tools {
+		  terraform 'terraform'
+	}
   stages{
     stage('clean workspace') {
       steps {
