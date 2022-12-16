@@ -18,7 +18,7 @@ pipeline {
       steps {
       sh 'terraform init  -no-color'
         sh 'terraform plan -out main.tfplan  -no-color'
-        sh 'terraform apply main.tfplan -auto-approve -no-color'
+        sh 'terraform apply main.tfplan -no-color'
       }
     }
   }
