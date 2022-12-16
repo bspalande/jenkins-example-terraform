@@ -19,7 +19,7 @@ pipeline {
         //sh 'terraform init  -no-color'
         //sh 'terraform plan -out main.tfplan  -no-color'
         //sh 'terraform apply main.tfplan -no-color'
-        sh 'terraform apply -destroy -no-color'
+        sh 'terraform destroy'
       }
     }
   }
