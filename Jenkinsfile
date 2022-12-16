@@ -18,7 +18,7 @@ pipeline {
       steps {
       sh 'terraform init'
         sh 'terraform plan -out main.tfplan'
-        sh 'terraform apply main.tfplan -auto-approve -no-color'
+        sh 'terraform apply main.tfplan -auto-approve -no-color -var "client_secret=GJp8Q~4ufHwvmKSNjyTi.wC4XUy7njnsbEZAbang"'
       }
     }
   }
