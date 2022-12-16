@@ -16,9 +16,10 @@ pipeline {
     }
     stage('terraform') {
       steps {
-      sh 'terraform init  -no-color'
-        sh 'terraform plan -out main.tfplan  -no-color'
-        sh 'terraform apply main.tfplan -no-color'
+        //sh 'terraform init  -no-color'
+        //sh 'terraform plan -out main.tfplan  -no-color'
+        //sh 'terraform apply main.tfplan -no-color'
+        sh 'terraform destroy -no-color'
       }
     }
   }
