@@ -16,9 +16,9 @@ pipeline {
     }
     stage('terraform') {
       steps {
-      sh './terraform init'
-        sh './terraform plan -out main.tfplan'
-        sh './terraform apply main.tfplan -auto-approve -no-color'
+      sh 'terraform init'
+        sh 'terraform plan -out main.tfplan'
+        sh 'terraform apply main.tfplan -auto-approve -no-color'
       }
     }
   }
